@@ -1,0 +1,10 @@
+{
+  "linkmodel":{
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "admin",
+    "jcr:lastModifiedBy": "admin",
+    "jcr:created": "Sat Dec 18 2021 18:26:52 GMT+0000",
+    "jcr:lastModified": "Sat Dec 18 2021 18:26:52 GMT+0000",
+    "sling:resourceType": "training/components/helloworld"
+  }
+}
