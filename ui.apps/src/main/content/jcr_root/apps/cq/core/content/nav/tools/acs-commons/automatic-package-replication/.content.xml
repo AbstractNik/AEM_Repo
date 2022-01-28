@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Tooling to automatically replicate AEM packages."
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Automatic Package Replication"
+    href="/miscadmin#/etc/acs-commons/automatic-package-replication"
+    icon="archive"
+    id="acs-commons__automatic-package-replication"
+    target="_blank"/>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--/* Calling the server-side JS script for all view logic that Sightly cannot do */-->
+<html data-sly-use.logic="logic.js">
+<head>
+    <!--/* Expressions allow to easily output variables */-->
+    <title>${currentPage.title}</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <!--/* To allow some HTML, use the following context option */-->
+    <p>${properties.jcr:description @ context='html'}</p>
+    
+    <!--/* Iterating over any collection or iterable is easy */-->
+    <ul data-sly-list="${logic.navRoot.listChildren}">
+        <li><a href="${item.path}.html">${item.title}</a></li>
+    </ul>
+</body>
+</html>

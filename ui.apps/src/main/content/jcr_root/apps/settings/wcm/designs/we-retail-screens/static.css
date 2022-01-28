@@ -1,0 +1,35 @@
+/**
+ * ADOBE CONFIDENTIAL
+ * ___________________
+ *
+ * Copyright 2018 Adobe
+ * All Rights Reserved.
+ *
+ * NOTICE: All information contained herein is, and remains
+ * the property of Adobe and its suppliers, if any. The intellectual
+ * and technical concepts contained herein are proprietary to Adobe
+ * and its suppliers and are protected by all applicable intellectual
+ * property laws, including trade secret and copyright laws.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe.
+ */
+.cq-Screens-textOverlay {
+  padding: 1em;
+  font-size: 3rem;
+  line-height: 1em;
+}
+
+.aem-AuthorLayer-Edit .cq-Screens-textOverlay {
+  display: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.cq-Screens-textOverlay-color--light {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.cq-Screens-textOverlay-color--dark {
+  background-color: rgba(255, 255, 255, .6);
+}

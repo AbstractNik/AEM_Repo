@@ -1,0 +1,4 @@
+{
+    "service.ranking":0,
+    "user.mapping":"wetrain.core:training=training-user"
+}

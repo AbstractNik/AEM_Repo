@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Manage Controlled Processes"
+        sling:resourceType="acs-commons/components/utilities/manage-controlled-processes">
+        <blocks/>
+        <models/>
+        <instances/>
+    </jcr:content>
+    <rep:policy/>
+</jcr:root>

@@ -1,0 +1,67 @@
+<h1>My Inherited Page Script</h1>
+
+<sly data-sly-include="blue.html" />
+<p>
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+	The examples below use HTL attributes <br/>
+    Learn more about these attributes in the 
+    <a href="https://github.com/Adobe-Marketing-Cloud/htl-spec/blob/master/SPECIFICATION.md">HTL specification</a> <br/>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+</p>
+
+<p data-sly-use.rootPage="/content/we-retail/language-masters/en">
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+	In examples 1 and 2 we use the resource ${rootPage.path}<br/>
+	Learn more about the 
+	<a href="https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/Resource.html">Resource API</a><br/>
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+</p>
+
+<h3>Ex 1: Child resources of ${rootPage.name}</h3>
+<ul data-sly-list=${rootPage.listChildren}>
+	<li >
+      ${item.name}
+    </li>
+</ul>
+
+<p>
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+	In example 2 we get the Page Title from the jcr:title property under the jcr:content node.
+    We then use data-sly-test to only list the Page nodes under the resource.<br/>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+<p>
+
+<h3 data-sly-use.jcrContent="${rootPage.path}/jcr:content">Ex 2: Child Pages of ${jcrContent.jcr:title}</h3>
+
+<ul data-sly-list=${rootPage.listChildren}>
+	<li data-sly-test="${item.name != 'jcr:content'}">
+      <a href="${item.path @ extension='html'}">${item.name}</a>
+    </li>
+</ul>
+
+<p>
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+    In Examples 3 and 4 we use the currentNode object <br/>
+    Learn more about the <a href="https://docs.adobe.com/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node API</a><br/>
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+</p>
+
+<h3>Ex 3: Sibling Nodes of ${currentNode.name}</h3>
+<ul data-sly-list=${currentNode.parent.nodes}>
+	<li>
+      ${item.name}
+    </li>
+</ul>
+
+<p>
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+    In example 4, only the siblings of the currentNode with primaryType=cq:Page are listed <br/>
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br/>
+</p>
+
+<h3>Ex 4: Sibling Pages of ${currentNode.name}</h3>
+<ul data-sly-list=${currentNode.parent.nodes}>
+	<li data-sly-test="${item.primaryNodeType.toString == 'cq:Page'}">
+      <a href="${item.path @ extension='html'}">${item.name}</a>
+    </li>
+</ul>

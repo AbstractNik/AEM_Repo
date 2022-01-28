@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:description="System Notifications for AEM Author"
+    jcr:primaryType="cq:Template"
+    jcr:title="System Notification"
+    allowedPaths="[/etc/acs-commons/notifications(/.*)?]"
+    ranking="{Long}1">
+    <jcr:content
+        cq:designPath="/etc/designs/acs-commons"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="acs-commons/components/utilities/system-notifications"/>
+</jcr:root>

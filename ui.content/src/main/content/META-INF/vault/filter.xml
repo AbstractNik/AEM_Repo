@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/aemtraining" mode="merge"/>
+    <filter root="/content/aemtraining" mode="merge"/>
+    <filter root="/content/dam/aemtraining" mode="merge"/>
+    <filter root="/content/experience-fragments/aemtraining" mode="merge"/>
+</workspaceFilter>

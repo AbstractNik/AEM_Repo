@@ -1,0 +1,7 @@
+{
+  "mobile.resourceTypes": [
+    "aemtraining/components/page",
+      "aemtraining/components/structure/aemtrainingpage"
+  ],
+  "README": "Indicate which page resource types should display the mobile emulators."
+}

@@ -1,0 +1,65 @@
+/*
+ * ADOBE CONFIDENTIAL
+ * ___________________
+ *
+ *  Copyright 2016 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+body {
+    background-color: #f5f5f5;
+    color: #000000;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    padding: 0;
+    margin: 1.25rem;
+}
+
+.root.responsivegrid {
+    margin: 0 auto;
+    max-width: 64rem;
+    background: white;
+    border: #d0d0d0 1px solid;
+}
+
+div.image img {
+    margin: 0;
+    width: 100%;
+}
+
+div.title,
+div.text {
+    margin: 2rem;
+}
+
+div.title h1 {
+    line-height: 1rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.625rem 1.25rem;
+    border: #d0d0d0 1px solid;
+    border-radius: 3px;
+    line-height: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4b4b4b;
+    background: #fafafa;
+}
+
+div.new {
+    display: none;
+}
